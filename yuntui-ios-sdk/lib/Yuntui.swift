@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import UserNotifications
 
 public class Yuntui {
     
@@ -46,8 +45,7 @@ public class Yuntui {
         logEvent(name: "@open_app", properties: [:])
     }
     
-    public func handleNotification(_ response: UNNotificationResponse) {
-        let userInfo = response.notification.request.content.userInfo
+    public func handleNotificationUserInfo(_ userInfo: [AnyHashable : Any]) {
         pushPayload = userInfo["yuntui"] as? [String: Any]
         // update exsiting events in this session
         if let pushPayload = pushPayload {

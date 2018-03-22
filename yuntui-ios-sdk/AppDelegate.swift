@@ -54,7 +54,7 @@ extension AppDelegate: JPUSHRegisterDelegate {
 
     func jpushNotificationCenter(_ center: UNUserNotificationCenter!, didReceive response: UNNotificationResponse!, withCompletionHandler completionHandler: (() -> Void)!) {
         let userInfo = response.notification.request.content.userInfo
-        Yuntui.shared.handleNotification(response)
+        Yuntui.shared.handleNotificationUserInfo(userInfo)
         print("receive notification")
         
         print(userInfo)
