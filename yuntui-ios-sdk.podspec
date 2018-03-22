@@ -10,5 +10,6 @@ Pod::Spec.new do |s|
   s.source_files = "yuntui-ios-sdk/lib/*.swift"
   s.requires_arc = true
   s.platform     = :ios, '10.0'
-
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+  s.swift_version = '4.0'
 end
