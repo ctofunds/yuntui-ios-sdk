@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B366D5F5200F180100AAA882 /* Yuntui.swift in Sources */ = {isa = PBXBuildFile; fileRef = B366D5F4200F180100AAA882 /* Yuntui.swift */; };
+		B366D5F7200F24A800AAA882 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = B366D5F6200F24A800AAA882 /* Network.swift */; };
+		B366D5FB201037AF00AAA882 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B366D5FA201037AF00AAA882 /* DataManager.swift */; };
+		B3E8012C200EEBD200EE828F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E8012B200EEBD200EE828F /* AppDelegate.swift */; };
+		B3E8012E200EEBD200EE828F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E8012D200EEBD200EE828F /* ViewController.swift */; };
+		B3E80131200EEBD200EE828F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E8012F200EEBD200EE828F /* Main.storyboard */; };
+		B3E80133200EEBD200EE828F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E80132200EEBD200EE828F /* Assets.xcassets */; };
+		B3E80136200EEBD200EE828F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E80134200EEBD200EE828F /* LaunchScreen.storyboard */; };
+		FA9F31587127FC618A0809D7 /* Pods_yuntui_ios_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B9C26067E3D1C06C910FBB /* Pods_yuntui_ios_sdk.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		831DE7ED4635303C153026FE /* Pods-yuntui-ios-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yuntui-ios-sdk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yuntui-ios-sdk/Pods-yuntui-ios-sdk.debug.xcconfig"; sourceTree = "<group>"; };
+		8E753142BBD200019B4E6D3C /* Pods-yuntui-ios-sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yuntui-ios-sdk.release.xcconfig"; path = "Pods/Target Support Files/Pods-yuntui-ios-sdk/Pods-yuntui-ios-sdk.release.xcconfig"; sourceTree = "<group>"; };
+		B366D5F4200F180100AAA882 /* Yuntui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yuntui.swift; sourceTree = "<group>"; };
+		B366D5F6200F24A800AAA882 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		B366D5FA201037AF00AAA882 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		B3E80128200EEBD200EE828F /* yuntui-ios-sdk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yuntui-ios-sdk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E8012B200EEBD200EE828F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3E8012D200EEBD200EE828F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B3E80130200EEBD200EE828F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3E80132200EEBD200EE828F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3E80135200EEBD200EE828F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3E80137200EEBD200EE828F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E8013E200EEFD000EE828F /* yuntui-ios-sdk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "yuntui-ios-sdk-Bridging-Header.h"; sourceTree = "<group>"; };
+		B3E80141200EF3F500EE828F /* yuntui-ios-sdk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "yuntui-ios-sdk.entitlements"; sourceTree = "<group>"; };
+		D8B9C26067E3D1C06C910FBB /* Pods_yuntui_ios_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yuntui_ios_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3E80125200EEBD200EE828F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9F31587127FC618A0809D7 /* Pods_yuntui_ios_sdk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75B8A83264548BE25F295EFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				831DE7ED4635303C153026FE /* Pods-yuntui-ios-sdk.debug.xcconfig */,
+				8E753142BBD200019B4E6D3C /* Pods-yuntui-ios-sdk.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B366D5F3200F17EC00AAA882 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				B366D5F4200F180100AAA882 /* Yuntui.swift */,
+				B366D5F6200F24A800AAA882 /* Network.swift */,
+				B366D5FA201037AF00AAA882 /* DataManager.swift */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		B3E8011F200EEBD200EE828F = {
+			isa = PBXGroup;
+			children = (
+				B3E8012A200EEBD200EE828F /* yuntui-ios-sdk */,
+				B3E80129200EEBD200EE828F /* Products */,
+				75B8A83264548BE25F295EFA /* Pods */,
+				B3EAACD6249E38B651468A86 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3E80129200EEBD200EE828F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3E80128200EEBD200EE828F /* yuntui-ios-sdk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3E8012A200EEBD200EE828F /* yuntui-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				B366D5F3200F17EC00AAA882 /* lib */,
+				B3E80141200EF3F500EE828F /* yuntui-ios-sdk.entitlements */,
+				B3E8012B200EEBD200EE828F /* AppDelegate.swift */,
+				B3E8012D200EEBD200EE828F /* ViewController.swift */,
+				B3E8012F200EEBD200EE828F /* Main.storyboard */,
+				B3E80132200EEBD200EE828F /* Assets.xcassets */,
+				B3E80134200EEBD200EE828F /* LaunchScreen.storyboard */,
+				B3E80137200EEBD200EE828F /* Info.plist */,
+				B3E8013E200EEFD000EE828F /* yuntui-ios-sdk-Bridging-Header.h */,
+			);
+			path = "yuntui-ios-sdk";
+			sourceTree = "<group>";
+		};
+		B3EAACD6249E38B651468A86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8B9C26067E3D1C06C910FBB /* Pods_yuntui_ios_sdk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3E80127200EEBD200EE828F /* yuntui-ios-sdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3E8013A200EEBD200EE828F /* Build configuration list for PBXNativeTarget "yuntui-ios-sdk" */;
+			buildPhases = (
+				726BFC51427AB5525EA0189F /* [CP] Check Pods Manifest.lock */,
+				B3E80124200EEBD200EE828F /* Sources */,
+				B3E80125200EEBD200EE828F /* Frameworks */,
+				B3E80126200EEBD200EE828F /* Resources */,
+				9BC2AF24FEC7F5380EDDA05F /* [CP] Embed Pods Frameworks */,
+				618B50F6A845B5C14B761EBD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "yuntui-ios-sdk";
+			productName = "yuntui-ios-sdk";
+			productReference = B3E80128200EEBD200EE828F /* yuntui-ios-sdk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3E80120200EEBD200EE828F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = ltebean;
+				TargetAttributes = {
+					B3E80127200EEBD200EE828F = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = B3E80123200EEBD200EE828F /* Build configuration list for PBXProject "yuntui-ios-sdk" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3E8011F200EEBD200EE828F;
+			productRefGroup = B3E80129200EEBD200EE828F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3E80127200EEBD200EE828F /* yuntui-ios-sdk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3E80126200EEBD200EE828F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E80136200EEBD200EE828F /* LaunchScreen.storyboard in Resources */,
+				B3E80133200EEBD200EE828F /* Assets.xcassets in Resources */,
+				B3E80131200EEBD200EE828F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		618B50F6A845B5C14B761EBD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yuntui-ios-sdk/Pods-yuntui-ios-sdk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		726BFC51427AB5525EA0189F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9BC2AF24FEC7F5380EDDA05F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yuntui-ios-sdk/Pods-yuntui-ios-sdk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3E80124200EEBD200EE828F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E8012E200EEBD200EE828F /* ViewController.swift in Sources */,
+				B366D5FB201037AF00AAA882 /* DataManager.swift in Sources */,
+				B366D5F5200F180100AAA882 /* Yuntui.swift in Sources */,
+				B366D5F7200F24A800AAA882 /* Network.swift in Sources */,
+				B3E8012C200EEBD200EE828F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B3E8012F200EEBD200EE828F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3E80130200EEBD200EE828F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B3E80134200EEBD200EE828F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3E80135200EEBD200EE828F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3E80138200EEBD200EE828F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3E80139200EEBD200EE828F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3E8013B200EEBD200EE828F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 831DE7ED4635303C153026FE /* Pods-yuntui-ios-sdk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "yuntui-ios-sdk/yuntui-ios-sdk.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LUAG5Z5ST3;
+				INFOPLIST_FILE = "yuntui-ios-sdk/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ltebean.yuntui-ios-sdk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "yuntui-ios-sdk/yuntui-ios-sdk-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3E8013C200EEBD200EE828F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E753142BBD200019B4E6D3C /* Pods-yuntui-ios-sdk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "yuntui-ios-sdk/yuntui-ios-sdk.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LUAG5Z5ST3;
+				INFOPLIST_FILE = "yuntui-ios-sdk/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ltebean.yuntui-ios-sdk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "yuntui-ios-sdk/yuntui-ios-sdk-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3E80123200EEBD200EE828F /* Build configuration list for PBXProject "yuntui-ios-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E80138200EEBD200EE828F /* Debug */,
+				B3E80139200EEBD200EE828F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3E8013A200EEBD200EE828F /* Build configuration list for PBXNativeTarget "yuntui-ios-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E8013B200EEBD200EE828F /* Debug */,
+				B3E8013C200EEBD200EE828F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3E80120200EEBD200EE828F /* Project object */;
+}
