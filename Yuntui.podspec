@@ -1,6 +1,6 @@
 
 Pod::Spec.new do |s|
-  s.name         = "yuntui-ios-sdk"
+  s.name         = "Yuntui"
   s.version      = "0.0.1"
   s.summary      = "yuntui ios sdk"
   s.homepage     = "https://github.com/ctofunds/yuntui-ios-sdk"

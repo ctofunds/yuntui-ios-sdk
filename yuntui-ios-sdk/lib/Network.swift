@@ -12,7 +12,7 @@ class Network {
     
     static let shared = Network()
     
-    let serverHost = "http://47.100.43.25:9004"
+    let serverHost = "http://139.224.6.23:9004"
 //    let serverHost = "http://192.168.1.16:9004"
 
     var appKey: String?
@@ -43,8 +43,7 @@ class Network {
             guard let json = try? JSONSerialization.jsonObject(with: data) as! [String: Any] else {
                 return onError()
             }
-            let code = json["code"] as! Int
-            guard code == 200 else {
+            guard let code = json["code"] as? Int, code == 200 else {
                 return onError()
             }
             return onSuccess(json["data"]!)

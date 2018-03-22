@@ -97,7 +97,9 @@ public class Yuntui {
             return
         }
         network.post(toPath: "/api/v1/user/create", body: user.toDict(), onSuccess: { data in
-            let userId = data as! Int
+            guard let userId = data as? Int else {
+                return
+            }
             self.dataManager.currentUser().userId = userId
             self.dataManager.events.forEach { $0.userId = userId }
         }, onError: {
