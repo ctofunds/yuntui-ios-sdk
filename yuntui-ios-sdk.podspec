@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/ctofunds/yuntui-ios-sdk"
   s.license      = "MIT"
   s.author       = { "ltebean" => "yucong1118@gmail.com" }
-  s.source       = { :git => "https://github.com/ctofunds/yuntui-ios-sdk.git", :tag => s.version}
+  s.source       = { :git => "https://github.com/ctofunds/yuntui-ios-sdk.git", :tag => "master"}
   s.source_files = "yuntui-ios-sdk/lib/*.swift"
   s.requires_arc = true
   s.platform     = :ios, '10.0'
