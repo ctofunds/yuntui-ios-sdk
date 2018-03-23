@@ -8,6 +8,7 @@
 
 import UIKit
 import UserNotifications
+import Yuntui
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
