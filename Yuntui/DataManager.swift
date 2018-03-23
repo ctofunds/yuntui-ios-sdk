@@ -76,11 +76,10 @@ class DataManager {
     
     static let shared = DataManager()
     
-    private let dataFileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("yuntui.plist")
+    var appKey: String?
 
     var user: User!
     var events: [Event] = []
-    
     
     func currentUser() -> User {
         return user
@@ -103,6 +102,9 @@ class DataManager {
     
     
     func persistDataToFile() {
+        guard let dataFileURL = getDataFileURL() else {
+            return
+        }
         let data: [String : Any] = [
             "user": user.toDict(),
             "events": events.map { $0.toDict() }
@@ -110,7 +112,20 @@ class DataManager {
         NSDictionary(dictionary: data).write(to: dataFileURL, atomically: true)
     }
     
+    func getDataFileURL() -> URL? {
+        guard let appKey = appKey else {
+            return nil
+        }
+        let fileName = "yuntui-\(String(appKey.reversed())).plist"
+        print(fileName)
+        return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent(fileName)
+
+    }
+    
     func loadDataFromFile() {
+        guard let dataFileURL = getDataFileURL() else {
+            return
+        }
         if let data = NSDictionary(contentsOf: dataFileURL) as? [String : Any] {
             // load user
             if let userDict = data["user"] as? [String: Any] {
@@ -128,5 +143,6 @@ class DataManager {
     }
     
 }
+
 
 

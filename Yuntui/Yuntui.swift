@@ -23,6 +23,8 @@ import UIKit
     
     @objc public func setup(withAppKey appKey: String) {
         network.appKey = appKey
+        dataManager.appKey = appKey
+        
         // load data
         dataManager.loadDataFromFile()
         // update user properties
@@ -100,8 +102,8 @@ import UIKit
             }
             self.dataManager.currentUser().userId = userId
             self.dataManager.events.forEach { $0.userId = userId }
-        }, onError: {
-            
+        }, onError: { msg in
+            print(msg)
         })
     }
     
@@ -111,9 +113,8 @@ import UIKit
             return
         }
         network.post(toPath: "/api/v1/user/update", body: user.toDict(), onSuccess: { data in
-
-        }, onError: {
-            
+        }, onError: { msg in
+            print(msg)
         })
     }
     
@@ -129,8 +130,9 @@ import UIKit
         let body = events.map({ $0.toDict() })
         network.post(toPath: "/api/v1/event/create", body: body, onSuccess: { data in
             
-        }, onError: {
-            
+        }, onError: { msg in
+            print(msg)
+
         })
     }
     
