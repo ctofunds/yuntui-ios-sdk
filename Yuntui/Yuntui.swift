@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-public class Yuntui {
+@objc public class Yuntui: NSObject {
     
-    public static let shared = Yuntui()
+    @objc  public static let shared = Yuntui()
     
     private let network = Network.shared
     private let dataManager = DataManager.shared
@@ -21,7 +21,7 @@ public class Yuntui {
     private var pushPayload: [String: Any]?
     
     
-    public func setup(withAppKey appKey: String) {
+    @objc public func setup(withAppKey appKey: String) {
         network.appKey = appKey
         // load data
         dataManager.loadDataFromFile()
@@ -45,7 +45,7 @@ public class Yuntui {
         logEvent(name: "@open_app", properties: [:])
     }
     
-    public func handleNotificationUserInfo(_ userInfo: [AnyHashable : Any]) {
+    @objc public func handleNotificationUserInfo(_ userInfo: [AnyHashable : Any]) {
         pushPayload = userInfo["@yuntui"] as? [String: Any]
         // update exsiting events in this session
         if let pushPayload = pushPayload {
@@ -57,21 +57,21 @@ public class Yuntui {
         }
     }
     
-    public func setPushId(_ pushId: String) {
+    @objc public func setPushId(_ pushId: String) {
         dataManager.currentUser().pushId = pushId
         updateUser()
     }
     
-    public func setAppUserId(_ appUserId: String) {
+    @objc public func setAppUserId(_ appUserId: String) {
         dataManager.currentUser().appUserId = appUserId
     }
     
-    public func setUserProperties(_ properties: [String: PropertyValue]) {
+    @objc public func setUserProperties(_ properties: [String: Any]) {
         dataManager.currentUser().userProperties = properties
     }
 
     
-    public func logEvent(name: String, properties: [String: PropertyValue]) {
+    @objc public func logEvent(name: String, properties: [String: Any]) {
         let event = Event()
         event.eventName = name
         event.eventProperties = [:]

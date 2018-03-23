@@ -65,7 +65,7 @@ extension AppDelegate: JPUSHRegisterDelegate {
     func jpushNotificationCenter(_ center: UNUserNotificationCenter!, willPresent notification: UNNotification!, withCompletionHandler completionHandler: ((Int) -> Void)!) {
         let userInfo = notification.request.content.userInfo
         print(userInfo)
-        completionHandler(Int(UNNotificationPresentationOptions.alert.rawValue))
+    completionHandler(Int(UNNotificationPresentationOptions.alert.rawValue))
     }
 }
 
