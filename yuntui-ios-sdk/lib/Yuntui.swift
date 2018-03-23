@@ -46,7 +46,7 @@ public class Yuntui {
     }
     
     public func handleNotificationUserInfo(_ userInfo: [AnyHashable : Any]) {
-        pushPayload = userInfo["yuntui"] as? [String: Any]
+        pushPayload = userInfo["@yuntui"] as? [String: Any]
         // update exsiting events in this session
         if let pushPayload = pushPayload {
             dataManager.events.forEach({ event in
