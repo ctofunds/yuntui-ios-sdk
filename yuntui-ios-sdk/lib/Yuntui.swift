@@ -84,7 +84,7 @@ public class Yuntui {
         event.eventTime = currentTime()
         dataManager.save(events: [event])
         
-        if dataManager.events.count > 10 {
+        if dataManager.events.count >= 50 {
             pushEvents()
         }
     }
