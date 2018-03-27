@@ -78,7 +78,7 @@ class DataManager {
     
     var appKey: String?
 
-    var user: User!
+    var user = User()
     var events: [Event] = []
     
     func currentUser() -> User {

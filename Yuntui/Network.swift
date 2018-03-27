@@ -12,8 +12,8 @@ class Network {
     
     static let shared = Network()
     
-    let serverHost = "http://139.224.6.23:9004"
-//    let serverHost = "http://192.168.1.16:9004"
+//    let serverHost = "http://139.224.6.23:9004"
+    let serverHost = "http://192.168.1.6:9004"
     let sdkVersion = "0.0.1"
 
     var appKey: String?
