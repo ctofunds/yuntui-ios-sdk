@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Yuntui.shared.setAppUserId("123456")
         Yuntui.shared.setUserProperties([
             "gender": "male",
-            "age": 21
+            "age": 28
         ])
         return true
     }

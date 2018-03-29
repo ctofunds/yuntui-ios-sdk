@@ -21,6 +21,7 @@ class User {
     var userId: Int = 0
     var appUserId: String = ""
     var pushId: String = ""
+    var deviceId: String = ""
     var sysProperties: [String: Any] = [:]
     var userProperties: [String: Any] = [:]
     
@@ -28,6 +29,7 @@ class User {
         return [
             "userId": userId,
             "pushId": pushId,
+            "deviceId": deviceId,
             "appUserId": appUserId,
             "sysProperties": sysProperties,
             "userProperties": userProperties
@@ -38,6 +40,7 @@ class User {
         self.init()
         self.userId = dict["userId"] as! Int
         self.pushId = dict["pushId"] as! String
+        self.deviceId = dict["deviceId"] as! String
         self.appUserId = dict["appUserId"] as! String
         self.sysProperties = dict["sysProperties"] as! [String: Any]
         self.userProperties = dict["userProperties"] as! [String: Any]

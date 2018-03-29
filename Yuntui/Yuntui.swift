@@ -33,9 +33,9 @@ import UIKit
             "platform": "ios",
             "osVersion": UIDevice.current.systemVersion,
             "bundleId": Bundle.main.bundleIdentifier!,
-            "appVersion": Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String,
-            "deviceId": UIDevice.current.identifierForVendor?.uuidString ?? ""
+            "appVersion": Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
         ]
+        dataManager.currentUser().deviceId = UIDevice.current.identifierForVendor?.uuidString ?? ""
         // check user id
         if dataManager.currentUser().userId == 0 {
             createUser()
