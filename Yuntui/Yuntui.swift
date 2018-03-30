@@ -24,11 +24,9 @@ import UIKit
     @objc public func setup(withAppKey appKey: String) {
         network.appKey = appKey
         dataManager.appKey = appKey
-        
         // load data
         dataManager.loadDataFromFile()
         // update user properties
-        
         dataManager.currentUser().sysProperties = [
             "platform": "ios",
             "osVersion": UIDevice.current.systemVersion,

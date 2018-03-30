@@ -36,13 +36,13 @@ class Network {
                 return onError("api error: network error")
             }
             guard (response as! HTTPURLResponse).statusCode == 200 else {
-                return
+                return onError("api error: status != 200")
             }
             guard let data = data else {
                 return onError("api error: no data")
             }
             guard let json = try? JSONSerialization.jsonObject(with: data) as! [String: Any] else {
-                return onError("api error: json parse")
+                return onError("api error: json parse error")
             }
             guard let code = json["code"] as? Int, code == 200 else {
                 return onError("api error: code != 200")
