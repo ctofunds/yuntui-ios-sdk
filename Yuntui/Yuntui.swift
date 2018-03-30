@@ -129,9 +129,10 @@ import UIKit
         }
         let body = events.map({ $0.toDict() })
         network.post(toPath: "/api/v1/event/create", body: body, onSuccess: { data in
-            
+//            self.dataManager.persistDataToFile()
         }, onError: { msg in
-            print(msg)
+            self.dataManager.events.append(contentsOf: events)
+            self.dataManager.persistDataToFile()
 
         })
     }
